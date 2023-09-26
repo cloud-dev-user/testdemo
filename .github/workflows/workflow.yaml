@@ -1,0 +1,15 @@
+name: Print  workflow
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: cloud-dev-user/testdemo@master
+        with:
+          message: "Hello, world!"
