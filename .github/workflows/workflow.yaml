@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    - uses: cloud-dev-user/testdemo@master
+    steps:
+      - uses: cloud-dev-user/testdemo@master
         with:
-          message: "Hello, world!"
+           message: "Hello, world!"
+ 
